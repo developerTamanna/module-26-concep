@@ -17,11 +17,13 @@ document.getElementById('ad-product-btn')
     const div = document.createElement('div');
     // console.log(div)
     div.innerHTML =`
-       <h1>Hello</h1>
-       <img src="" alt=""/>
-       <p>price</p>
+       <h1>${productName}</h1>
+       <img src="${productImage}" alt=""/>
+       <p>${productPrice}</p> 
        
-
     `
+    mainContainer.appendChild(div);
+    console.log(div)
+
 
 })
